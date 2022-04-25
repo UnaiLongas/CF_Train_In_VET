@@ -7,14 +7,16 @@
 		<link rel="stylesheet" type="text/css" href="./css/index.css"/>
 		<link rel="script" href="./js/index.js"/>
         <link rel="shortcut icon" type="image/png" href="./img/logo.png"/>
-		<script src="./js/main.js"></script>
+		<script defer src="./js/main.js"></script>
 		<script src="https://kit.fontawesome.com/6bc02a6bab.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
 	</head>
-	<body id="partners">
+
+	<body id="partners" class="light">
         <nav class="navbar is-white" aria-label="main navigation">
           <div class="navbar-brand">
 			  <div class="navbar-item">
-              <img src="./img/logo.png" height="30" alt="CFinVET_icon">
+				<a href="./index.html"><img src="./img/logo.png" height="30" alt="CFinVET_icon"></a>
 			</div>
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarStart">
               <span aria-hidden="true"></span>
@@ -195,6 +197,12 @@
 									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2746.710475829114!2d11.325498415555948!3d46.49404507912671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47829c264ce6b47f%3A0x4a4664a26659e6ab!2sTechnologische%20Fachoberschule%20Max%20Valier!5e0!3m2!1ses!2ses!4v1645702675407!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 								</div>
 								<footer class="card-footer">
+									<a target="blank" href="https://www.instagram.com/tfo.maxvalier/" class="card-footer-item">
+										<i class="fa-brands fa-instagram"> Instagram</i>
+									</a>
+									<a target="blank" href="https://es-es.facebook.com/tfo.maxvalier/" class="card-footer-item">
+										<i class="fa-brands fa-facebook-f"> Facebook</i>
+									</a> 
 									<a target="blank" href="http://tfobz.it" class="card-footer-item">
 										<i class="fa-solid fa-globe"><p class="isa_laptop"> Web</p></i>
 									</a>
@@ -234,10 +242,10 @@
 									</a>
 									<a target="blank" href="#" class="card-footer-item">
 										<i class="fa-brands fa-twitter"> Twitter</i>
-									</a>
-									<a target="blank" href="#" class="card-footer-item">
+									</a>-->
+									<a target="blank" href="https://es-es.facebook.com/ceniferciser/" class="card-footer-item">
 										<i class="fa-brands fa-facebook-f"> Facebook</i>
-									</a> -->
+									</a> 
 									<a target="blank" href="https://www.cenifer.com" class="card-footer-item">
 										<i class="fa-solid fa-globe"><p class="isa_laptop"> Web</p></i>
 									</a>
@@ -381,7 +389,58 @@
 		<br><br><br>
 		
 <!-- upbutton -->
-<a href="#partners" id="up_button" class="button isa_laptop"><i class="fa-solid fa-angles-up"></i></a>
+<div class="progress-wrap">
+	<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+	</svg>
+</div>
+
+<script>
+	(function ($) {
+"use strict";
+
+//Switch dark/light
+
+$(document).ready(function () {
+"use strict";
+
+//Scroll back to top
+
+var progressPath = document.querySelector(".progress-wrap path");
+var pathLength = progressPath.getTotalLength();
+progressPath.style.transition = progressPath.style.WebkitTransition =
+  "none";
+progressPath.style.strokeDasharray = pathLength + " " + pathLength;
+progressPath.style.strokeDashoffset = pathLength;
+progressPath.getBoundingClientRect();
+progressPath.style.transition = progressPath.style.WebkitTransition =
+  "stroke-dashoffset 10ms linear";
+var updateProgress = function () {
+  var scroll = $(window).scrollTop();
+  var height = $(document).height() - $(window).height();
+  var progress = pathLength - (scroll * pathLength) / height;
+  progressPath.style.strokeDashoffset = progress;
+};
+updateProgress();
+$(window).scroll(updateProgress);
+var offset = 50;
+var duration = 550;
+jQuery(window).on("scroll", function () {
+  if (jQuery(this).scrollTop() > offset) {
+	jQuery(".progress-wrap").addClass("active-progress");
+  } else {
+	jQuery(".progress-wrap").removeClass("active-progress");
+  }
+});
+jQuery(".progress-wrap").on("click", function (event) {
+  event.preventDefault();
+  jQuery("html, body").animate({ scrollTop: 0 }, duration);
+  return false;
+});
+});
+})(jQuery);
+</script>
+	
 <!-- upbutton end -->
 
 
@@ -410,20 +469,20 @@
 					  <a href="#">Carbon footprint calculator</a><br>
 					  <a href="#">Erasmus+ Website</a><br>
 				  </div>
-				  <div class="columns">
+				  <!-- <div class="columns">
 					  <div class="column">
 						<figure class="image is-64x64">
 							<img class="footer-icon" src="./img/logo-black.png" alt="CF Train in VET logo black">
 						  </figure>
 					  </div>
-					  <div class="column">
-						<figure class="image is-64x64">
+					  <div class="column"> -->
+						<figure class="image is-128x128">
 							<img class="footer-icon" src="./img/erasmus_logo.png" alt="Erasmus logo black">
 						  </figure>
-					  </div>
+					  <!-- </div>
 					  <div class="column"></div>
 				  </div>
-				  
+				   -->
 				</div>
 		</div>
 	</div>
