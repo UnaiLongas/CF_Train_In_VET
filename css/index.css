@@ -1021,8 +1021,9 @@ body.light .progress-wrap svg.progress-circle path {
 }
 
 #SecPartners #partnersMap {
-    height: 30rem;
+    height: 25rem;
     width: 80%;
+    margin: 0px auto;
 }
 
 
