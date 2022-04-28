@@ -1020,10 +1020,14 @@ body.light .progress-wrap svg.progress-circle path {
     display: inline;
 }
 
+#SecPartners container {
+    margin: 0px auto;
+    width: 80%;
+}
+
 #SecPartners #partnersMap {
     height: 25rem;
-    width: 80%;
-    margin: 0px auto;
+    width: 100%;
 }
 
 
