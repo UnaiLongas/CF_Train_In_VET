@@ -478,6 +478,10 @@ body.light .progress-wrap svg.progress-circle path {
 
 /* about - links */
 
+#logo_erasmus_about {
+    width: 60%;
+}
+
 .inner-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -14376,4 +14380,4 @@ print {
 }
 
 
-/*# sourceMappingURL=bulma.css.map */
+/*# sourceMappingURL=bulma.css.map *#
