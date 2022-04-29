@@ -479,12 +479,12 @@ body.light .progress-wrap svg.progress-circle path {
 /* about - links */
 
 #figure_erasmus_about {
-    height: 40%;
+    height: 50%;
 }
 
 #logo_erasmus_about {
     width: 50%;
-    height: 40%;
+    height: 80%;
     margin: 0px auto;
 }
 
