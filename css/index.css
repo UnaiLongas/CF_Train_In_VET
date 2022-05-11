@@ -481,6 +481,7 @@ body.light .progress-wrap svg.progress-circle path {
 #figure_erasmus_about {
     height: 30%;
     width: 50%;
+    margin: 0px auto;
 }
 
 #logo_erasmus_about {
