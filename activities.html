@@ -1,147 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="utf-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>CFTrain in VET | Activities</title>
-      <link rel="stylesheet" type="text/css" href="./css/index.css"/>
-      <link rel="script" href="./js/index.js"/>
-      <link rel="shortcut icon" type="image/png" href="./img/logo.png"/>
-      <script src="./js/main.js"></script>
-      <script src="https://kit.fontawesome.com/6bc02a6bab.js" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
-		  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"> -->
-  </head>
-  
-  <body id="activities" class="light">
-    <!-- menu -->
-    <nav class="navbar is-white" aria-label="main navigation">
-      <div class="navbar-brand">
-    <div class="navbar-item">
-      <a href="./index.html"><img src="./img/logo.png" height="30" alt="CFinVET_icon"></a>
-  </div>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarStart">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CFTrain in VET | Activities</title>
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  <link rel="script" href="./js/index.js" />
+  <link rel="shortcut icon" type="image/png" href="./img/logo.png" />
+  <script src="https://kit.fontawesome.com/6bc02a6bab.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body id="activities">
+  <!-- menu -->
+  <nav class="navbar is-white" aria-label="main navigation">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <img src="./img/logo.png" height="30" alt="CFinVET_icon">
+      </div>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarStart">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarStart" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item hover-underline-animation" href="./index.html">
+          <span class="icon-text">
+            <span class="icon icon-navbar-item">
+              <i class="fa-solid fa-home"></i>
+            </span>
+            <span>Home</span>
+          </span>
+        </a>
+
+        <a class="navbar-item hover-underline-animation" href="./about.html">
+          <span class="icon-text">
+            <span class="icon icon-navbar-item">
+              <i class="fa-solid fa-question"></i>
+            </span>
+            <span>About</span>
+          </span>
+        </a>
+
+        <a class="navbar-item hover-underline-animation" href="./partners.html">
+          <span class="icon-text">
+            <span class="icon icon-navbar-item">
+              <i class="fa-solid fa-user-group"></i>
+            </span>
+            <span>Partners</span>
+          </span>
+        </a>
+        <a class="navbar-item hover-underline-animation" href="./activities.html">
+          <span class="icon-text">
+            <span class="icon icon-navbar-item">
+              <i class="fa-solid fa-leaf"></i>
+            </span>
+            <span>Activities</span>
+          </span>
         </a>
       </div>
-        <div id="navbarStart" class="navbar-menu">
-            <div class="navbar-start">
-              <a class="navbar-item hover-underline-animation" href="./index.html">
-                  <span class="icon-text">
-                      <span class="icon icon-navbar-item">
-                          <i class="fa-solid fa-home"></i>
-                      </span>
-                      <span>Home</span>
-                    </span>
-                </a>
-        
-                <a class="navbar-item hover-underline-animation" href="./about.html">
-                  <span class="icon-text">
-                      <span class="icon icon-navbar-item">
-          <i class="fa-solid fa-question"></i>
-                      </span>
-                      <span>About</span>
-                    </span>
-                </a>
-
-                <a class="navbar-item hover-underline-animation" href="./partners.html">
-                  <span class="icon-text">
-                      <span class="icon icon-navbar-item">
-                        <i class="fa-solid fa-user-group"></i>
-                      </span>
-                      <span>Partners</span>
-                    </span>
-                </a>
-                <a class="navbar-item hover-underline-animation" href="./activities.html">
-                  <span class="icon-text">
-                      <span class="icon icon-navbar-item">
-                        <i class="fa-solid fa-leaf"></i>
-                      </span>
-                      <span>Activities</span>
-                    </span>
-                </a>
-
-
-
-
-
-
-<!--
-                <a class="navbar-item hover-underline-animation is-hoverable has-dropdown" href="./activities.html">
-                   <span class="icon-text">
-                      <span class="icon icon-navbar-item">
-                        <i class="fa-solid fa-leaf"></i>
-                      </span>
-                      <span>Activities</span>
-                    </span> 
-
-
-                     
-                    <span class="icon icon-navbar-item">
-                      <i class="fa-solid fa-leaf"></i>
-                    </span>
-                    <a class="navbar-link">Partners</a>
-                    
-
-                    
-                     <span class="icon-text">
-                      <span class="icon icon-navbar-item">
-                        <i class="fa-solid fa-leaf"></i>
-                      </span>
-                      <span>
-                        <a class="navbar-link">Partners</a>
-                        
-                        <div class="navbar-dropdown">
-                          <a href="#cuatrovientos" class="navbar-item">Cuatrovientos</a>
-                          <a href="#wolfsberg" class="navbar-item">HTL Wolfsberg</a>
-                          <a href="#maxvalier" class="navbar-item">Max Valier</a>
-                          <a href="#" class="navbar-item">CENIFER</a>
-                          <a href="#" class="navbar-item">Göranssonska Skolan</a>
-                          <a href="#" class="navbar-item">STENUM</a>
-                        </div>
-                      </span> 
-                      
-                    </span>
-            
-                    
-                </a> -->
-
-
-
-
-                
-
-
-
-
-                
-              </div>
-            </div>
-    </nav>
-<!-- fin menu -->
-<!-- inicio titulo -->
-<br><br>
-		  <div class="container is-max-desktop">
-			<div class="heading-title">ACTIVITIES</div>
-				<h2 class="title is-1 has-text-centered heading-main-title">Activities</h2>
-		</div>
-<!-- fin titulo -->
-<br>
-<nav class="breadcrumb has-bullet-separator is-centered">
-  <ul>
-    <li><a href="#cuatrovientos">Cuatrovientos</a></li>
-    <li><a href="#wolfsberg">HTL Wolfsberg</a></li>
-    <li><a href="#maxvalier">Max Valier</a></li>
-    <li><a href="#cenifer">CENIFER</a></li>
-    <li><a href="#goranssonska">Göranssonska Skolan</a></li>
-    <!-- <li><a href="#stenum">STENUM</a></li> -->
-    <!-- <li><a href="#">SANDVIK</a></li> -->
-  </ul>
+    </div>
   </nav>
-<br><br>
-<!-- carousel -->
+  <!-- fin menu -->
+  <!-- inicio titulo -->
+  <br><br>
+  <div class="container is-max-desktop">
+    <div class="heading-title">ACTIVITIES</div>
+    <h2 class="title is-1 has-text-centered heading-main-title">Activities</h2>
+  </div>
+  <!-- fin titulo -->
+  <br>
+  <!-- CIRCULOS NAVEGACION -->
+  <div class="container has-text-centered">
+  <div class="columns">
+    <div class="column is-inline-block">
+        <a class="tag is-rounded is-medium" onclick="toggleVisibility('cuatrovientos')">Cuatrovientos</a>
+        <a class="tag is-rounded is-medium" onclick="toggleVisibility('wolfsberg')">Wolfsberg</a>
+        <a class="tag is-rounded is-medium" onclick="toggleVisibility('max_valier')">Max Valier</a>
+        <a class="tag is-rounded is-medium" onclick="toggleVisibility('cenifer')">CENIFER</a>
+        <a class="tag is-rounded is-medium" onclick="toggleVisibility('goranssonska')">Göranssonska Skolan</a>
+        <!-- <a href="#cuatrovientos" class="tag is-rounded is-medium" onclick="activities('4v')">Cuatrovientos</a>
+        <a href="#wolfsberg" class="tag is-rounded is-medium" onclick="activities('wf')">Wolfsberg</a>
+        <a href="#maxvalier" class="tag is-rounded is-medium" onclick="activities('mv')">Max Valier</a>
+        <a href="#cenifer" class="tag is-rounded is-medium" onclick="activities('cn')">CENIFER</a>
+        <a href="#goranssonska" class="tag is-rounded is-medium" onclick="activities('gs')">Göranssonska Skolan</a> -->
+    </div>
+</div>
+</div>
+<!-- FIN CIRCULOS NAVEGACION -->
+  <!-- <nav class="breadcrumb has-bullet-separator is-centered">
+    <ul>
+      <li><a href="#cuatrovientos">Cuatrovientos</a></li>
+      <li><a href="#wolfsberg">HTL Wolfsberg</a></li>
+      <li><a href="#maxvalier">Max Valier</a></li>
+      <li><a href="#cenifer">CENIFER</a></li>
+      <li><a href="#goranssonska">Göranssonska Skolan</a></li>
+    </ul>
+  </nav> -->
+  <br><br>
+  <!-- carousel -->
   <div class="container is-margen">
     <!-- Start Carousel -->
     <div id="carousel" class="carousel">
@@ -181,153 +142,289 @@
           <img src="./img/actv/122483950_3543274859027055_4275673015824666180_o.jpg" alt="carousel_img6">
         </figure>
       </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/wolfsberg_1.jpg" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/wolfsberg_2.jpg.png" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/worlfsberg_3.png" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/gorna_ac1.png" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/goran_2.png" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/cenifer_act1_1.JPG" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/cenifer_act1_2.JPG" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/cenifer_act1_3.JPG" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/cenifer_act1_4.JPG" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/cenifer_act1_5.JPG" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/cenifer_act2_1.jpg" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/cenifer_act3_1.JPG" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/cenifer_act3_2.JPG" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/cenifer_act3_3.JPG" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/cenifer_act3_4.JPG" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/cenifer_act3_5.JPG" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/maxvalier_act1.jpg" alt="carousel_img6">
+        </figure>
+      </div>
+      <div class="item-2">
+        <!-- Slide Content -->
+        <figure class="image is-4by3">
+          <img src="./img/actv/maxvalier_act2.jpg" alt="carousel_img6">
+        </figure>
+      </div>
       <!-- fin imagenes -->
     </div>
 
     <!-- End Carousel -->
   </div>
-    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-    <script>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+  <script>
     bulmaCarousel.attach('#carousel', {
       slidesToScroll: 1,
       slidesToShow: 3,
-			autoplay:true,
-			autoplaySpeed: 2000,
+      autoplay: true,
+      autoplaySpeed: 2000,
       pagination: false,
       infinite: true,
-      pauseOnHover:false
+      pauseOnHover: false
     });
-    </script>
-      <!-- fin carousel -->
-      <br><br><br><br><br><br><br>
-      <!-- secciones -->  
+  </script>
+  <!-- fin carousel -->
+  <br><br><br><br><br><br><br>
+  <!-- secciones -->
+<div class="actv_act" id="cuatrovientos">
+  <div class="container is-fluid section feature-section" >
+    <img class="feature-shape" src="./img/curves/section-curve-primary.png" alt>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div
+              class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
 
-      <div class="container is-fluid section feature-section" id="cuatrovientos">
-        <img class="feature-shape" src="./img/curves/section-curve-primary.png" alt>
-      <section class="hero is-white is-fullheight">
-          <div class="hero-body">
-            <div class="container">
-              <div class="columns  is-vcentered">
-                <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+              <div class="isa_mobile">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/actv1.jpg" alt="img Activity">
+                </figure>
+              </div>
 
-                  <div class="isa_mobile">
-                    <figure class="image is-square is-shadow">
-                      <img src="./img/actv/actv1.jpg" alt="img Activity">
+              <div class="isa_laptop container is-margen">
+                <div class="carousel">
+                  <div class="item-1">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/actv2.png" alt="carousel_img1">
                     </figure>
                   </div>
-
-                  <div class="isa_laptop container is-margen">
-                    <div class="carousel">
-                      <div class="item-1">
-                        <figure class="image is-4by3">
-                          <img src="./img/actv/actv2.png" alt="carousel_img1">
-                        </figure>
-                      </div>
-                      <div class="item-2">    
-                        <figure class="image is-4by3">
-                          <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </figure>
-                      </div>
-                      <div class="item-3">
-                        <figure class="image is-4by3">
-                          <img src="./img/actv/actv1.jpg" alt="carousel_img3">
-                        </figure>
-                      </div>
-                      <div class="item-2">
-                        <figure class="image is-4by3">
-                          <img src="./img/actv/122052666_3542946669059874_9032036309248941003_o.jpg" alt="carousel_img4">
-                        </figure>
-                      </div>
-                      <div class="item-2">
-                        <figure class="image is-4by3">
-                          <img src="./img/actv/122388656_3542946659059875_5634277516098986525_o.jpg" alt="carousel_img5">
-                        </figure>
-                      </div>
-                      <div class="item-2">
-                        <figure class="image is-4by3">
-                          <img src="./img/actv/122483950_3543274859027055_4275673015824666180_o.jpg" alt="carousel_img6">
-                        </figure>
-                      </div>
-                    </div>
+                  <div class="item-2">
+                    <figure class="image is-4by3">
+                      <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </figure>
                   </div>
-                    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-                    <script>
-                    bulmaCarousel.attach('.carousel', {
-                      slidesToScroll: 1,
-                      slidesToShow: 1,
-                      autoplay:true,
-                      autoplaySpeed: 2000,
-                      pagination: false,
-                      infinite: true,
-                      pauseOnHover:true
-                    });
-                    </script>
-                   
-                </div>
-                <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
-                  <h1 class="title is-1 mb-6">
-                    Carbon Footprint Workshop. CO2 Calculation
-                  </h1>
-                  <h3 class="title is-3">
-                    Cuatrovientos
-                  </h3>
-                  <div class="divider is-primary"></div>
-                   
-                  <h2 class="subtitled subtitle">
-                    To start the project, around 500 students and 50 teachers took part in a pioneering event to calculate the CO2 emissions generated by Cuatrovientos , in a collaborative and simultaneous way.
-To do this, we had the collaboration of the technician Mikel Baztan, a climate expert, and the support of the Regional Councillor for the Environment and the Director of Vocational Training of the Government of Navarre.
-With the emission data provided, the pupils organised the calculation by scopes 1, 2 and 3 and together, they thought of reduction measures to face the challenge of becoming a neutral organization.<br>
-This event was supported by the greeting video from the European partners. <a class="is-a-link" href="https://www.youtube.com/watch?v=ESNEuouXljQ&t=49s">Video</a><br>
-The result of this workshop was presented in a <a class="is-a-link" href="https://www.flipsnack.com/F5EEAE6D75E/ya-nadie-duda-de-que-el-desarrollo-tiene-que-ser-humano.html">digital magazine</a>
-
-                  </h2>
+                  <div class="item-3">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/actv1.jpg" alt="carousel_img3">
+                    </figure>
+                  </div>
+                  <div class="item-2">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/122052666_3542946669059874_9032036309248941003_o.jpg" alt="carousel_img4">
+                    </figure>
+                  </div>
+                  <div class="item-2">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/122388656_3542946659059875_5634277516098986525_o.jpg" alt="carousel_img5">
+                    </figure>
+                  </div>
+                  <div class="item-2">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/122483950_3543274859027055_4275673015824666180_o.jpg" alt="carousel_img6">
+                    </figure>
+                  </div>
                 </div>
               </div>
+              <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+              <script>
+                bulmaCarousel.attach('.carousel', {
+                  slidesToScroll: 1,
+                  slidesToShow: 1,
+                  autoplay: true,
+                  autoplaySpeed: 2000,
+                  pagination: false,
+                  infinite: true,
+                  pauseOnHover: true
+                });
+              </script>
+
+            </div>
+            <div
+              class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title is-1 mb-6">
+                Carbon Footprint Workshop. CO2 Calculation
+              </h1>
+              <h3 class="title is-3">
+                CUATROVIENTOS
+              </h3>
+              <div class="divider is-primary"></div>
+
+              <h2 class="subtitled subtitle">
+                To start the project, around 500 students and 50 teachers took part in a pioneering
+                event to calculate the CO2 emissions generated by Cuatrovientos , in a collaborative and
+                simultaneous way.
+                To do this, we had the collaboration of the technician Mikel Baztan, a climate expert,
+                and the support of the Regional Councillor for the Environment and the Director of
+                Vocational Training of the Government of Navarre.
+                With the emission data provided, the pupils organised the calculation by scopes 1, 2 and
+                3 and together, they thought of reduction measures to face the challenge of becoming a
+                neutral organization.<br>
+                This event was supported by the greeting video from the European partners. <a class="is-a-link"
+                  href="https://www.youtube.com/watch?v=ESNEuouXljQ&t=49s">Video</a><br>
+                The result of this workshop was presented in a <a class="is-a-link"
+                  href="https://www.flipsnack.com/F5EEAE6D75E/ya-nadie-duda-de-que-el-desarrollo-tiene-que-ser-humano.html">digital
+                  magazine</a>
+
+              </h2>
             </div>
           </div>
-        </section>
+        </div>
       </div>
-<!--  -->
-      <div class="container is-fluid section feature-section">
-        <img class="feature-shape" src="./img/curves/section-curve-yellow.png" alt>
-      <section class="hero is-white is-fullheight">
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns  is-vcentered">
-              <!-- <div class="not-visible-desktop">
+    </section>
+  </div>
+
+  <!--  -->
+  <div class="container is-fluid section feature-section">
+    <img class="feature-shape" src="./img/curves/section-curve-yellow.png" alt>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <!-- <div class="not-visible-desktop">
               <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
                 <figure class="image is-square is-shadow">
                   <img src="./img/actv/actv2.png" alt>
                 </figure>
               </div> 
             </div> -->
-            
-              <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
-                <h1 class="title titled is-1 mb-6">
-                  Solar panels installation. CO2 reduction
-                </h1>
-                <h3 class="title is-3">
-                  Cuatrovientos
-                </h3>
-                <div class="divider is-yellow"></div>
-                <h2 class="subtitle subtitled">
-                  As a mitigation action, Cuatrovientos committed to install photovoltaic panels on its roof: seventy modules with a financial investment of 30012,84€  and an estimated payback period of around  9 years. Since the installation, an avarage of 30% reduction in consumption has been achieved.
-With the self-production and self-consumption of electricity, Cuatrovientos will manage to reduce its carbon footprint and carry out its activity in a more sustainable way, taking a step towards the organisation's Corporate Social Responsibility. The installation has the same  environmental effect as the planting of 1282 trees in a year.
 
-                </h2>
-              </div>
-              <!-- <div class="not-visible-mobile"> -->
-                <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
-                  <!-- <figure class="image is-square is-shadow">
+            <div
+              class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title titled is-1 mb-6">
+                Solar panels installation. CO2 reduction
+              </h1>
+              <h3 class="title is-3">
+                CUATROVIENTOS
+              </h3>
+              <div class="divider is-yellow"></div>
+              <h2 class="subtitle subtitled">
+                As a mitigation action, Cuatrovientos committed to install photovoltaic panels on its
+                roof: seventy modules with a financial investment of 30012,84€ and an estimated payback
+                period of around 9 years. Since the installation, an avarage of 30% reduction in
+                consumption has been achieved.
+                With the self-production and self-consumption of electricity, Cuatrovientos will manage
+                to reduce its carbon footprint and carry out its activity in a more sustainable way,
+                taking a step towards the organisation's Corporate Social Responsibility. The
+                installation has the same environmental effect as the planting of 1282 trees in a year.
+
+              </h2>
+            </div>
+            <!-- <div class="not-visible-mobile"> -->
+            <div
+              class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+              <!-- <figure class="image is-square is-shadow">
                     <img src="./img/actv/actv2.png" alt>
                   </figure> -->
-                  <div class="isa_mobile">
-                    <figure class="image is-square is-shadow">
-                      <img src="https://bulma.io/images/placeholders/128x128.png" alt="img Activity">
-                    </figure>
-                  </div>
+              <div class="isa_mobile">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/actv2.png" alt="img Activity">
+                </figure>
+              </div>
+              <div class="isa_laptop">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/actv2.png" alt="img Activity">
+                </figure>
+              </div>
 
-                  <div class="isa_laptop container is-margen">
+              <!-- <div class="isa_laptop container is-margen">
                     <div class="carousel">
                       <div class="item-1">
                         <figure class="image is-4by3">
@@ -372,33 +469,39 @@ With the self-production and self-consumption of electricity, Cuatrovientos will
                       infinite: true,
                       pauseOnHover:true
                     });
-                    </script>
-                </div>  
-              <!-- </div> -->
-              
+                    </script> -->
             </div>
+            <!-- </div> -->
+
           </div>
         </div>
-      </section>
-      </div> 
-<!--  -->
-      <div class="container is-fluid section feature-section">
-          <img class="feature-shape" src="./img/curves/section-curve-lpink.png" alt>
-        <section class="hero is-white is-fullheight">
-          <div class="hero-body">
-            <div class="container">
-              <div class="columns  is-vcentered">
-                <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
-                  <!-- <figure class="image is-square is-shadow">
+      </div>
+    </section>
+  </div>
+  <!--  -->
+  <div class="container is-fluid section feature-section">
+    <img class="feature-shape" src="./img/curves/section-curve-lpink.png" alt>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div
+              class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+              <!-- <figure class="image is-square is-shadow">
                     <img src="./img/actv/actv3.png" alt>
                   </figure> -->
-                  <div class="isa_mobile">
-                    <figure class="image is-square is-shadow">
-                      <img src="https://bulma.io/images/placeholders/128x128.png" alt="img Activity">
-                    </figure>
-                  </div>
+              <div class="isa_mobile">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/actv3.png" alt="img Activity">
+                </figure>
+              </div>
+              <div class="isa_laptop">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/actv3.png" alt="img Activity">
+                </figure>
+              </div>
 
-                  <div class="isa_laptop container is-margen">
+              <!-- <div class="isa_laptop container is-margen">
                     <div class="carousel">
                       <div class="item-1">
                         <figure class="image is-4by3">
@@ -443,887 +546,1046 @@ With the self-production and self-consumption of electricity, Cuatrovientos will
                       infinite: true,
                       pauseOnHover:true
                     });
-                    </script>
-                  
-                </div>
-                <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
-                  <h1 class="title is-1 mb-6">
-                    Tree Plantation. CO2 Compensation
-                  </h1>
-                  <h3 class="title is-3">
-                    Cuatrovientos
-                  </h3>
-                  <div class="divider is-beige"></div>
-                   
-                  <h2 class="subtitled subtitle">
-                    Cuatrovientos signed a green agreement with the local Council of Berriozar . Two hundred trees and bushes were planted on land provided by the council by a group of students and teachers. The commitment is to repeat the initiative every year in order to compensate the school's carbon dioxide emissions that cannot be reduced and contribute to the positive consequences of the carbon sequestration over the years. 
-In support of this activity, the teachers of Cuatrovientos made a replica of the tree plantation in the school garden.
+                    </script> -->
 
-                  </h2>
-                </div>
-              </div>
             </div>
-          </div>
-        </section>
-      </div>
-<!--  -->
-      <div class="container is-fluid section feature-section" id="wolfsberg">
-        <img class="feature-shape" src="./img/curves/section-curve-pink.png" alt>
-      <section class="hero is-white is-fullheight">
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns  is-vcentered">
-              <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
-                <h1 class="title titled is-1 mb-6">
-                  absurd illustrations that make sense
-                </h1>
-                <h3 class="title is-3">
-                  HTL WOLFSBERG
-                </h3>
-                <div class="divider is-lpink"></div>
-                <h2 class="subtitle subtitled">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum cupiditate dolorum vitae dolores
-                  nesciunt totam magni quas.
-                </h2>
-              </div>
-              <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
-                <!-- <figure class="image is-square is-shadow">
-                  <img src="https://bulma.io/images/placeholders/128x128.png" alt>
-                </figure> -->
-                <div class="isa_mobile">
-                  <figure class="image is-square is-shadow">
-                    <img src="https://bulma.io/images/placeholders/128x128.png" alt="img Activity">
-                  </figure>
-                </div>
+            <div
+              class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title is-1 mb-6">
+                Tree Plantation. CO2 Compensation
+              </h1>
+              <h3 class="title is-3">
+                CUATROVIENTOS
+              </h3>
+              <div class="divider is-beige"></div>
 
-                <div class="isa_laptop container is-margen">
-                  <div class="carousel">
-                    <div class="item-1">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
-                      </figure>
-                    </div>
-                    <div class="item-2">    
-                      <figure class="image is-4by3">
-                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </figure>
-                    </div>
-                    <div class="item-3">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-                  <script>
-                  bulmaCarousel.attach('.carousel', {
-                    slidesToScroll: 1,
-                    slidesToShow: 1,
-                    autoplay:true,
-                    autoplaySpeed: 2000,
-                    pagination: false,
-                    infinite: true,
-                    pauseOnHover:true
-                  });
-                  </script>
-              </div>  
+              <h2 class="subtitled subtitle">
+                Cuatrovientos signed a green agreement with the local Council of Berriozar . Two hundred
+                trees and bushes were planted on land provided by the council by a group of students and
+                teachers. The commitment is to repeat the initiative every year in order to compensate
+                the school's carbon dioxide emissions that cannot be reduced and contribute to the
+                positive consequences of the carbon sequestration over the years.
+                In support of this activity, the teachers of Cuatrovientos made a replica of the tree
+                plantation in the school garden.
+
+              </h2>
             </div>
           </div>
         </div>
-      </section>
       </div>
-<!--  -->
-      <div class="container is-fluid section feature-section">
-        <img class="feature-shape" src="./img/curves/section-curve-dark-pink.png" alt>
-      <section class="hero is-white is-fullheight">
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns  is-vcentered">
-              <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
-                <!-- <figure class="image is-square is-shadow">
-                  <img src="https://bulma.io/images/placeholders/128x128.png" alt>
-                </figure> -->
-                <div class="isa_mobile">
-                  <figure class="image is-square is-shadow">
-                    <img src="https://bulma.io/images/placeholders/128x128.png" alt="img Activity">
-                  </figure>
-                </div>
-
-                <div class="isa_laptop container is-margen">
-                  <div class="carousel">
-                    <div class="item-1">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
-                      </figure>
-                    </div>
-                    <div class="item-2">    
-                      <figure class="image is-4by3">
-                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </figure>
-                    </div>
-                    <div class="item-3">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-                  <script>
-                  bulmaCarousel.attach('.carousel', {
-                    slidesToScroll: 1,
-                    slidesToShow: 1,
-                    autoplay:true,
-                    autoplaySpeed: 2000,
-                    pagination: false,
-                    infinite: true,
-                    pauseOnHover:true
-                  });
-                  </script>
-              </div>
-              <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
-                <h1 class="title is-1 mb-6">
-                  absurd illustrations that make sense
-                </h1>
-                <h3 class="title is-3">
-                  HTL WOLFSBERG
-                </h3>
-                <div class="divider is-pink"></div>
-                  
-                <h2 class="subtitled subtitle">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum cupiditate dolorum vitae dolores
-                  nesciunt totam magni quas.
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      </div>
-<!--  -->
-      <div class="container is-fluid section feature-section" id="maxvalier">
-        <img class="feature-shape" src="./img/curves/section-curve-purple.png" alt>
-      <section class="hero is-white is-fullheight">
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns  is-vcentered">
-              <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
-                <h1 class="title titled is-1 mb-6">
-                  absurd illustrations that make sense
-                </h1>
-                <h3 class="title is-3">
-                  MAX VALIER
-                </h3>
-                <div class="divider is-purple"></div>
-                <h2 class="subtitle subtitled">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum cupiditate dolorum vitae dolores
-                  nesciunt totam magni quas.
-                </h2>
-              </div>
-              <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
-                <!-- <figure class="image is-square is-shadow">
-                  <img src="https://bulma.io/images/placeholders/128x128.png" alt>
-                </figure> -->
-                <div class="isa_mobile">
-                  <figure class="image is-square is-shadow">
-                    <img src="https://bulma.io/images/placeholders/128x128.png" alt="img Activity">
-                  </figure>
-                </div>
-
-                <div class="isa_laptop container is-margen">
-                  <div class="carousel">
-                    <div class="item-1">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
-                      </figure>
-                    </div>
-                    <div class="item-2">    
-                      <figure class="image is-4by3">
-                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </figure>
-                    </div>
-                    <div class="item-3">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-                  <script>
-                  bulmaCarousel.attach('.carousel', {
-                    slidesToScroll: 1,
-                    slidesToShow: 1,
-                    autoplay:true,
-                    autoplaySpeed: 2000,
-                    pagination: false,
-                    infinite: true,
-                    pauseOnHover:true
-                  });
-                  </script>
-              </div>  
-            </div>
-          </div>
-        </div>
-      </section>
-      </div>
-<!--  -->
-      <div class="container is-fluid section feature-section">
-        <img class="feature-shape" src="./img/curves/section-curve-primary.png" alt>
-      <section class="hero is-white is-fullheight">
-          <div class="hero-body">
-            <div class="container">
-              <div class="columns  is-vcentered">
-                <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
-
-                  <div class="isa_mobile">
-                    <figure class="image is-square is-shadow">
-                      <img src="https://bulma.io/images/placeholders/128x128.png" alt="img Activity">
-                    </figure>
-                  </div>
-
-                  <div class="isa_laptop container is-margen">
-                    <div class="carousel">
-                      <div class="item-1">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
-                        </figure>
-                      </div>
-                      <div class="item-2">    
-                        <figure class="image is-4by3">
-                          <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </figure>
-                      </div>
-                      <div class="item-3">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
-                        </figure>
-                      </div>
-                      <div class="item-2">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
-                        </figure>
-                      </div>
-                      <div class="item-2">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
-                        </figure>
-                      </div>
-                      <div class="item-2">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
-                    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-                    <script>
-                    bulmaCarousel.attach('.carousel', {
-                      slidesToScroll: 1,
-                      slidesToShow: 1,
-                      autoplay:true,
-                      autoplaySpeed: 2000,
-                      pagination: false,
-                      infinite: true,
-                      pauseOnHover:true
-                    });
-                    </script>
-                   
-                </div>
-                <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
-                  <h1 class="title is-1 mb-6">
-                    Carbon Footprint Workshop. CO2 Calculation
-                  </h1>
-                  <h3 class="title is-3">
-                    Cuatrovientos
-                  </h3>
-                  <div class="divider is-primary"></div>
-                   
-                  <h2 class="subtitled subtitle">
-                    To start the project, around 500 students and 50 teachers took part in a pioneering event to calculate the CO2 emissions generated by Cuatrovientos , in a collaborative and simultaneous way.
-To do this, we had the collaboration of the technician Mikel Baztan, a climate expert, and the support of the Regional Councillor for the Environment and the Director of Vocational Training of the Government of Navarre.
-With the emission data provided, the pupils organised the calculation by scopes 1, 2 and 3 and together, they thought of reduction measures to face the challenge of becoming a neutral organization.<br>
-This event was supported by the greeting video from the European partners. <a class="is-a-link" href="https://www.youtube.com/watch?v=ESNEuouXljQ&t=49s">Video</a><br>
-The result of this workshop was presented in a <a class="is-a-link" href="https://www.flipsnack.com/F5EEAE6D75E/ya-nadie-duda-de-que-el-desarrollo-tiene-que-ser-humano.html">digital magazine</a>
-
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-<!--  -->
-      <div class="container is-fluid section feature-section" id="cenifer">
-        <img class="feature-shape" src="./img/curves/section-curve-yellow.png" alt>
-      <section class="hero is-white is-fullheight">
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns  is-vcentered">
-            
-              <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
-                <h1 class="title titled is-1 mb-6">
-                  Solar panels installation. CO2 reduction
-                </h1>
-                <h3 class="title is-3">
-                  Cuatrovientos
-                </h3>
-                <div class="divider is-yellow"></div>
-                <h2 class="subtitle subtitled">
-                  As a mitigation action, Cuatrovientos committed to install photovoltaic panels on its roof: seventy modules with a financial investment of 30012,84€  and an estimated payback period of around  9 years. Since the installation, an avarage of 30% reduction in consumption has been achieved.
-With the self-production and self-consumption of electricity, Cuatrovientos will manage to reduce its carbon footprint and carry out its activity in a more sustainable way, taking a step towards the organisation's Corporate Social Responsibility. The installation has the same  environmental effect as the planting of 1282 trees in a year.
-
-                </h2>
-              </div>
-              <!-- <div class="not-visible-mobile"> -->
-                <div class=" column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
-                  <!-- <figure class="image is-square is-shadow">
-                    <img src="./img/actv/actv2.png" alt>
-                  </figure> -->
-                  <div class="isa_mobile">
-                    <figure class="image is-square is-shadow">
-                      <img src="https://bulma.io/images/placeholders/128x128.png" alt="img Activity">
-                    </figure>
-                  </div>
-
-                  <div class="isa_laptop container is-margen">
-                    <div class="carousel">
-                      <div class="item-1">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
-                        </figure>
-                      </div>
-                      <div class="item-2">    
-                        <figure class="image is-4by3">
-                          <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </figure>
-                      </div>
-                      <div class="item-3">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
-                        </figure>
-                      </div>
-                      <div class="item-2">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
-                        </figure>
-                      </div>
-                      <div class="item-2">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
-                        </figure>
-                      </div>
-                      <div class="item-2">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
-                    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-                    <script>
-                    bulmaCarousel.attach('.carousel', {
-                      slidesToScroll: 1,
-                      slidesToShow: 1,
-                      autoplay:true,
-                      autoplaySpeed: 2000,
-                      pagination: false,
-                      infinite: true,
-                      pauseOnHover:true
-                    });
-                    </script>
-                </div>  
-              <!-- </div> -->
-              
-            </div>
-          </div>
-        </div>
-      </section>
-      </div> 
-<!--  -->
-      <div class="container is-fluid section feature-section">
-          <img class="feature-shape" src="./img/curves/section-curve-lpink.png" alt>
-        <section class="hero is-white is-fullheight">
-          <div class="hero-body">
-            <div class="container">
-              <div class="columns  is-vcentered">
-                <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
-                  <!-- <figure class="image is-square is-shadow">
-                    <img src="./img/actv/actv3.png" alt>
-                  </figure> -->
-                  <div class="isa_mobile">
-                    <figure class="image is-square is-shadow">
-                      <img src="https://bulma.io/images/placeholders/128x128.png" alt="img Activity">
-                    </figure>
-                  </div>
-
-                  <div class="isa_laptop container is-margen">
-                    <div class="carousel">
-                      <div class="item-1">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
-                        </figure>
-                      </div>
-                      <div class="item-2">    
-                        <figure class="image is-4by3">
-                          <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </figure>
-                      </div>
-                      <div class="item-3">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
-                        </figure>
-                      </div>
-                      <div class="item-2">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
-                        </figure>
-                      </div>
-                      <div class="item-2">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
-                        </figure>
-                      </div>
-                      <div class="item-2">
-                        <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
-                    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-                    <script>
-                    bulmaCarousel.attach('.carousel', {
-                      slidesToScroll: 1,
-                      slidesToShow: 1,
-                      autoplay:true,
-                      autoplaySpeed: 2000,
-                      pagination: false,
-                      infinite: true,
-                      pauseOnHover:true
-                    });
-                    </script>
-                </div>
-                <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
-                  <h1 class="title is-1 mb-6">
-                    Tree Plantation. CO2 Compensation
-                  </h1>
-                  <h3 class="title is-3">
-                    Cuatrovientos
-                  </h3>
-                  <div class="divider is-beige"></div>
-                   
-                  <h2 class="subtitled subtitle">
-                    Cuatrovientos signed a green agreement with the local Council of Berriozar . Two hundred trees and bushes were planted on land provided by the council by a group of students and teachers. The commitment is to repeat the initiative every year in order to compensate the school's carbon dioxide emissions that cannot be reduced and contribute to the positive consequences of the carbon sequestration over the years. 
-In support of this activity, the teachers of Cuatrovientos made a replica of the tree plantation in the school garden.
-
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
- <!--  -->
-      <div class="container is-fluid section feature-section" id="goranssonska">
-        <img class="feature-shape" src="./img/curves/section-curve-pink.png" alt>
-      <section class="hero is-white is-fullheight">
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns  is-vcentered">
-              <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
-                <h1 class="title titled is-1 mb-6">
-                  absurd illustrations that make sense
-                </h1>
-                <h3 class="title is-3">
-                  HTL WOLFSBERG
-                </h3>
-                <div class="divider is-lpink"></div>
-                <h2 class="subtitle subtitled">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum cupiditate dolorum vitae dolores
-                  nesciunt totam magni quas.
-                </h2>
-              </div>
-              <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
-                <!-- <figure class="image is-square is-shadow">
-                  <img src="https://bulma.io/images/placeholders/128x128.png" alt>
-                </figure> -->
-                <div class="isa_mobile">
-                  <figure class="image is-square is-shadow">
-                    <img src="https://bulma.io/images/placeholders/128x128.png" alt="img Activity">
-                  </figure>
-                </div>
-
-                <div class="isa_laptop container is-margen">
-                  <div class="carousel">
-                    <div class="item-1">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
-                      </figure>
-                    </div>
-                    <div class="item-2">    
-                      <figure class="image is-4by3">
-                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </figure>
-                    </div>
-                    <div class="item-3">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-                  <script>
-                  bulmaCarousel.attach('.carousel', {
-                    slidesToScroll: 1,
-                    slidesToShow: 1,
-                    autoplay:true,
-                    autoplaySpeed: 2000,
-                    pagination: false,
-                    infinite: true,
-                    pauseOnHover:true
-                  });
-                  </script>
-              </div>  
-            </div>
-          </div>
-        </div>
-      </section>
-      </div>
-<!--  -->
-      <div class="container is-fluid section feature-section">
-        <img class="feature-shape" src="./img/curves/section-curve-dark-pink.png" alt>
-      <section class="hero is-white is-fullheight">
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns  is-vcentered">
-              <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
-                <!-- <figure class="image is-square is-shadow">
-                  <img src="https://bulma.io/images/placeholders/128x128.png" alt>
-                </figure> -->
-                <div class="isa_mobile">
-                  <figure class="image is-square is-shadow">
-                    <img src="https://bulma.io/images/placeholders/128x128.png" alt="img Activity">
-                  </figure>
-                </div>
-
-                <div class="isa_laptop container is-margen">
-                  <div class="carousel">
-                    <div class="item-1">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
-                      </figure>
-                    </div>
-                    <div class="item-2">    
-                      <figure class="image is-4by3">
-                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </figure>
-                    </div>
-                    <div class="item-3">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-                  <script>
-                  bulmaCarousel.attach('.carousel', {
-                    slidesToScroll: 1,
-                    slidesToShow: 1,
-                    autoplay:true,
-                    autoplaySpeed: 2000,
-                    pagination: false,
-                    infinite: true,
-                    pauseOnHover:true
-                  });
-                  </script>
-              </div>
-              <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
-                <h1 class="title is-1 mb-6">
-                  absurd illustrations that make sense
-                </h1>
-                <h3 class="title is-3">
-                  HTL WOLFSBERG
-                </h3>
-                <div class="divider is-pink"></div>
-                  
-                <h2 class="subtitled subtitle">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum cupiditate dolorum vitae dolores
-                  nesciunt totam magni quas.
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      </div>
-<!--  -->
-      <div class="container is-fluid section feature-section">
-        <img class="feature-shape" src="./img/curves/section-curve-purple.png" alt>
-      <section class="hero is-white is-fullheight">
-        <div class="hero-body">
-          <div class="container">
-            <div class="columns  is-vcentered">
-              <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
-                <h1 class="title titled is-1 mb-6">
-                  absurd illustrations that make sense
-                </h1>
-                <h3 class="title is-3">
-                  MAX VALIER
-                </h3>
-                <div class="divider is-purple"></div>
-                <h2 class="subtitle subtitled">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum cupiditate dolorum vitae dolores
-                  nesciunt totam magni quas.
-                </h2>
-              </div>
-              <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
-                <!-- <figure class="image is-square is-shadow">
-                  <img src="https://bulma.io/images/placeholders/128x128.png" alt>
-                </figure> -->
-                <div class="isa_mobile">
-                  <figure class="image is-square is-shadow">
-                    <img src="https://bulma.io/images/placeholders/128x128.png" alt="img Activity">
-                  </figure>
-                </div>
-
-                <div class="isa_laptop container is-margen">
-                  <div class="carousel">
-                    <div class="item-1">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
-                      </figure>
-                    </div>
-                    <div class="item-2">    
-                      <figure class="image is-4by3">
-                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </figure>
-                    </div>
-                    <div class="item-3">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
-                      </figure>
-                    </div>
-                    <div class="item-2">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-                  <script>
-                  bulmaCarousel.attach('.carousel', {
-                    slidesToScroll: 1,
-                    slidesToShow: 1,
-                    autoplay:true,
-                    autoplaySpeed: 2000,
-                    pagination: false,
-                    infinite: true,
-                    pauseOnHover:true
-                  });
-                  </script>
-              </div>  
-            </div>
-          </div>
-        </div>
-      </section>
-      </div>
-
-
-
-        <br><br><br>
-        <br><br><br><br><br><br><br>
-
-<!-- upbutton -->
-<div class="progress-wrap">
-	<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-	</svg>
-</div>
-
-<script>
-	(function ($) {
-"use strict";
-
-//Switch dark/light
-
-$(document).ready(function () {
-"use strict";
-
-//Scroll back to top
-
-var progressPath = document.querySelector(".progress-wrap path");
-var pathLength = progressPath.getTotalLength();
-progressPath.style.transition = progressPath.style.WebkitTransition =
-  "none";
-progressPath.style.strokeDasharray = pathLength + " " + pathLength;
-progressPath.style.strokeDashoffset = pathLength;
-progressPath.getBoundingClientRect();
-progressPath.style.transition = progressPath.style.WebkitTransition =
-  "stroke-dashoffset 10ms linear";
-var updateProgress = function () {
-  var scroll = $(window).scrollTop();
-  var height = $(document).height() - $(window).height();
-  var progress = pathLength - (scroll * pathLength) / height;
-  progressPath.style.strokeDashoffset = progress;
-};
-updateProgress();
-$(window).scroll(updateProgress);
-var offset = 50;
-var duration = 550;
-jQuery(window).on("scroll", function () {
-  if (jQuery(this).scrollTop() > offset) {
-	jQuery(".progress-wrap").addClass("active-progress");
-  } else {
-	jQuery(".progress-wrap").removeClass("active-progress");
-  }
-});
-jQuery(".progress-wrap").on("click", function (event) {
-  event.preventDefault();
-  jQuery("html, body").animate({ scrollTop: 0 }, duration);
-  return false;
-});
-});
-})(jQuery);
-</script>
-	
-<!-- upbutton end -->
-
-
-<!-- Footer Start -->
-<img class="footer-waves" src="./img/bg/wavy-dark.png" alt="footer waves">
-<footer class="footer footer-dark">
-  <div class="container is-max-desktop">
-  <div class="columns">
-    <div class="column is-two-fifths">
-
-        <h3 class="title is-5">ABOUT THE PROJECT</h3>
-        <p>CF Train in VET is a project whose main objective is to train future professionals in sustainable skills based on the concept of Carbon Footprint calculation and reduction.</p>
-    </div>
-      <div class="column is-offset-1">
-      <h3 class="title is-5">JUST AT ONE CLICK</h3>
-      <div class="footer-link-column">
-        <a href="./index.html">Home</a><br>
-        <a href="./about.html">About the project</a><br>
-        <a href="./partners.html">Partners</a><br>
-        <a href="./activities.html">Activities</a><br>
-      </div>
-      </div>
-      <div class="column">
-        <h3 class="title is-5">USEFUL LINKS</h3>
-        <div class="footer-link-column">
-          <a href="#">Carbon footprint calculator</a><br>
-          <a href="#">Erasmus+ Website</a><br>
-        </div>
-        <!-- <div class="columns">
-          <div class="column">
-          <figure class="image is-64x64">
-            <img class="footer-icon" src="./img/logo-black.png" alt="CF Train in VET logo black">
-            </figure>
-          </div>
-          <div class="column"> -->
-          <figure class="image is-128x128">
-            <img class="footer-icon" src="./img/erasmus_logo.png" alt="Erasmus logo black">
-            </figure>
-          <!-- </div>
-          <div class="column"></div>
-        </div> -->
-        
-      </div>
+    </section>
   </div>
 </div>
-</footer>
-<!-- End footer -->
+  <!--  -->
+<div class="actv_act" id="wolfsberg">
+  <div class="container is-fluid section feature-section">
+    <img class="feature-shape" src="./img/curves/section-curve-pink.png" alt>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div
+              class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title titled is-1 mb-6">
+                Sustainability through glass bottles
+              </h1>
+              <h3 class="title is-3">
+                HTL WOLFSBERG
+              </h3>
+              <div class="divider is-lpink"></div>
+              <h2 class="subtitle subtitled">
+                Sustainability is an essential part when it comes to CO2 savings. A big problem are
+                plastic bottles and plastic cups, as they pollute our environment due to the
+                microplastics and the high CO2 emissions during the production process. Another problem
+                is that plastic bottles and cups are not reusable.
+              </h2>
+            </div>
+            <div
+              class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+              <figure class="image is-square is-shadow isa_laptop">
+                <img src="./img/actv/wolfsberg_1.jpg" alt>
+              </figure>
+              <div class="isa_mobile">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/wolfsberg_1.jpg" alt="img Activity">
+                </figure>
+              </div>
 
-      </body>     
+              <!-- <div class="isa_laptop container is-margen">
+                  <div class="carousel">
+                    <div class="item-1">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
+                      </figure>
+                    </div>
+                    <div class="item-2">    
+                      <figure class="image is-4by3">
+                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </figure>
+                    </div>
+                    <div class="item-3">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+                  <script>
+                  bulmaCarousel.attach('.carousel', {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    autoplay:true,
+                    autoplaySpeed: 2000,
+                    pagination: false,
+                    infinite: true,
+                    pauseOnHover:true
+                  });
+                  </script> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--  -->
+  <div class="container is-fluid section feature-section">
+    <img class="feature-shape" src="./img/curves/section-curve-dark-pink.png" alt>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div
+              class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+              <figure class="image is-square is-shadow isa_laptop">
+                <img src="./img/actv/wolfsberg_2.jpg.png" alt>
+              </figure>
+              <div class="isa_mobile">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/wolfsberg_2.jpg.png" alt="img Activity">
+                </figure>
+              </div>
+
+              <!-- <div class="isa_laptop container is-margen">
+                  <div class="carousel">
+                    <div class="item-1">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
+                      </figure>
+                    </div>
+                    <div class="item-2">    
+                      <figure class="image is-4by3">
+                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </figure>
+                    </div>
+                    <div class="item-3">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+                  <script>
+                  bulmaCarousel.attach('.carousel', {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    autoplay:true,
+                    autoplaySpeed: 2000,
+                    pagination: false,
+                    infinite: true,
+                    pauseOnHover:true
+                  });
+                  </script> -->
+            </div>
+            <div
+              class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title is-1 mb-6">
+                Logo Contest
+              </h1>
+              <h3 class="title is-3">
+                HTL WOLFSBERG
+              </h3>
+              <div class="divider is-pink"></div>
+
+              <h2 class="subtitled subtitle">
+                We students at the Higher College for Engineering Wolfsberg have designed a project logo
+                for the Erasmus+ project “CF Training in VET”, in which 4 different school partners are
+                working together. Since the partner school from Spain did not have a project logo for
+                the home page yet, the Higher College for Engineering Wolfsberg (Austria) decided to
+                organize a school competition for the carbon footprint logo. The competition took part
+                in February 2022 and a total of 5 classes, with approximately 100 students, participated
+                in it. In total 56 logos were submitted by the students. The project partners Spain,
+                Italy, Sweden, and Austria then agreed on the best 2 logos. One of them will be
+                published by the Spanish school on the project’s website.
+                Below you can see a photo of the two groups winning the competition and Ms. Moll and Mr.
+                Allesch presenting the winners with a certificate and some prices!
+
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--  -->
+  <div class="container is-fluid section feature-section">
+    <img class="feature-shape" src="./img/curves/section-curve-purple.png" alt>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div
+              class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title titled is-1 mb-6">
+                Carpooling – a way of CO2 reduction
+              </h1>
+              <h3 class="title is-3">
+                HTL WOLFSBERG
+              </h3>
+              <div class="divider is-purple"></div>
+              <h2 class="subtitle subtitled">
+
+                As part of the Erasmus+ project "CF Training in VET Schools", the CO2 consumption of the
+                Higher College for Engineering Wolfsberg was calculated. The result was surprising for
+                everyone, since more than 2/3 of the annual 850 tons of CO2 emissions result from
+                mobility.
+                Mobility - trips to and from school - is therefore also the greatest opportunity for the
+                school community to significantly reduce CO2 emissions.
+
+                A good way to reduce trips, especially in the Wolfsberg area, is carpooling. Talks are
+                currently underway with KINTO, a Toyota organization, regarding a carpooling app for the
+                school. There have now been 2 online meetings in which representatives of the Higher
+                College of Engineering Wolfsberg were informed about the KINTO Join Corporate carpooling
+                system.
+
+              </h2>
+            </div>
+            <div
+              class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+              <figure class="isa_laptop image is-square is-shadow">
+                <img src="./img/actv/worlfsberg_3.png" alt>
+              </figure>
+              <div class="isa_mobile">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/worlfsberg_3.png" alt="img Activity">
+                </figure>
+              </div>
+              <!-- 
+                <div class="isa_laptop container is-margen">
+                  <div class="carousel">
+                    <div class="item-1">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
+                      </figure>
+                    </div>
+                    <div class="item-2">    
+                      <figure class="image is-4by3">
+                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </figure>
+                    </div>
+                    <div class="item-3">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+                  <script>
+                  bulmaCarousel.attach('.carousel', {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    autoplay:true,
+                    autoplaySpeed: 2000,
+                    pagination: false,
+                    infinite: true,
+                    pauseOnHover:true
+                  });
+                  </script> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+  <!--  -->
+<div class="actv_act" id="max_valier">
+  <div class="container is-fluid section feature-section" >
+    <img class="feature-shape" src="./img/curves/section-curve-primary.png" alt>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div
+              class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+              <!-- <figure class="image is-square is-shadow">
+                  <img src="https://bulma.io/images/placeholders/128x128.png" alt>
+                </figure> -->
+              <div class="isa_laptop">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/maxvalier_act1.jpg" alt="img Activity">
+                </figure>
+              </div>
+              <div class="isa_mobile">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/maxvalier_act1.jpg" alt="img Activity">
+                </figure>
+              </div>
+
+              <!-- <div class="isa_laptop container is-margen">
+                  <div class="carousel">
+                    <div class="item-1">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
+                      </figure>
+                    </div>
+                    <div class="item-2">    
+                      <figure class="image is-4by3">
+                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </figure>
+                    </div>
+                    <div class="item-3">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+                  <script>
+                  bulmaCarousel.attach('.carousel', {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    autoplay:true,
+                    autoplaySpeed: 2000,
+                    pagination: false,
+                    infinite: true,
+                    pauseOnHover:true
+                  });
+                  </script> -->
+            </div>
+            <div
+              class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title titled is-1 mb-6">
+                Carbon Footprint App
+              </h1>
+              <h3 class="title is-3">
+                MAX VALIER
+              </h3>
+              <div class="divider is-primary"></div>
+              <h2 class="subtitle subtitled">
+                Our project aims to provide an easier solution for calculating the carbon footprint of a school. This is allowed by a user friendly and simple app for your smartphone and a website. To calculate the carbon footprint, you can simply create a new calculation and add the modules you want to have in it. Sharing the results is also possible by exporting the calculation itself or exporting a PDF with the diagrams. 
+              </h2>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--  -->
+  <div class="container is-fluid section feature-section">
+        <img class="feature-shape" src="./img/curves/section-curve-yellow.png" alt>
+      <section class="hero is-white is-fullheight">
+          <div class="hero-body">
+            <div class="container">
+              <div class="columns  is-vcentered">
+                <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+                  <h1 class="title is-1 mb-6">
+                    Our Matura Project
+                  </h1>
+                  <h3 class="title is-3">
+                    MAX VALIER
+                  </h3>
+                  <div class="divider is-yellow"></div>
+                   
+                  <h2 class="subtitled subtitle">
+                    The Eurasmus+ project was the incentive for our Matura project. Based on the interesting data we got from the calculation of CO2 emissions, we decided to further explore the topic and go a few steps further. We brought other schools and some companies on board to get a local comparison and make improvements.  
+                    The project is accompanied by our subject teacher Prof. Florian Morandell
+                  </h2>
+                </div>
+                <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+                  <div class="isa_mobile">
+                    <figure class="image is-square is-shadow">
+                      <img src="./img/actv/maxvalier_act2.jpg" alt="img Activity">
+                    </figure>
+                  </div>
+                  <div class="isa_laptop">
+                    <figure class="image is-square is-shadow">
+                      <img src="./img/actv/maxvalier_act2.jpg" alt="img Activity">
+                    </figure>
+                  </div>
+                  <!-- <div class="isa_laptop container is-margen">
+                    <div class="carousel">
+                      <div class="item-1">
+                        <figure class="image is-4by3">
+                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
+                        </figure>
+                      </div>
+                      <div class="item-2">    
+                        <figure class="image is-4by3">
+                          <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </figure>
+                      </div>
+                      <div class="item-3">
+                        <figure class="image is-4by3">
+                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
+                        </figure>
+                      </div>
+                      <div class="item-2">
+                        <figure class="image is-4by3">
+                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
+                        </figure>
+                      </div>
+                      <div class="item-2">
+                        <figure class="image is-4by3">
+                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
+                        </figure>
+                      </div>
+                      <div class="item-2">
+                        <figure class="image is-4by3">
+                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+                    <script>
+                    bulmaCarousel.attach('.carousel', {
+                      slidesToScroll: 1,
+                      slidesToShow: 1,
+                      autoplay:true,
+                      autoplaySpeed: 2000,
+                      pagination: false,
+                      infinite: true,
+                      pauseOnHover:true
+                    });
+                    </script> -->
+                   
+                </div>     
+              </div>
+            </div>
+          </div>
+        </section>
+  </div>
+</div>
+  <!--  -->
+<div class="actv_act" id="cenifer">
+  <div class="container is-fluid section feature-section" >
+    <img class="feature-shape" src="./img/curves/section-curve-lpink.png" alt>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+
+              <div class="isa_mobile">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/cenifer_act1_1.JPG" alt="img Activity">
+                </figure>
+              </div>
+              <!-- <div class="isa_laptop">
+                                <figure class="image is-square is-shadow">
+                                    <img src="./img/actv/cenifer_actv1.png" alt="img Activity">
+                                </figure>
+                            </div> -->
+
+              <div class="isa_laptop container is-margen">
+                <div class="carousel">
+                  <div class="item-1">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/cenifer_act1_1.JPG" alt="carousel_img1">
+                    </figure>
+                  </div>
+                  <div class="item-2">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/cenifer_act1_2.JPG" alt="carousel_img3">
+                    </figure>
+                  </div>
+                  <div class="item-3">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/cenifer_act1_3.JPG" alt="carousel_img3">
+                    </figure>
+                  </div>
+                  <div class="item-2">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/cenifer_act1_4.JPG" alt="carousel_img4">
+                    </figure>
+                  </div>
+                  <div class="item-2">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/cenifer_act1_5.JPG" alt="carousel_img5">
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+              <script>
+                bulmaCarousel.attach('.carousel', {
+                  slidesToScroll: 1,
+                  slidesToShow: 1,
+                  autoplay: true,
+                  autoplaySpeed: 2000,
+                  pagination: false,
+                  infinite: true,
+                  pauseOnHover: true
+                });
+              </script>
+
+            </div>
+            <div class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title is-1 mb-6">
+                Meeting with consultant
+              </h1>
+              <h3 class="title is-3">
+                CENIFER
+              </h3>
+              <div class="divider is-lpink"></div>
+
+              <h2 class="subtitled subtitle">
+                Advice meeting with consultant Natalia Conejo about the way to identify the measurable
+                factors of scope 3, and data taking to be included in the calculator of the Ecological
+                Transition Ministry where scopes 1 and 2 are considered.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--  -->
+  <div class="container is-fluid section feature-section">
+    <img class="feature-shape" src="./img/curves/section-curve-pink.png" alt>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div
+              class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title is-1 mb-6">
+                Educational Activity
+              </h1>
+              <h3 class="title is-3">
+                CENIFER
+              </h3>
+              <div class="divider is-pink"></div>
+
+              <h2 class="subtitled subtitle">
+                We compiled information on the mobility of the entire educational community with the help of Special Needs students. They used a QR code so all the students could access the questionnaire to obtain the data.
+After the corresponding analysis we informed them of the results. You can see their opinions in the video.
+              </h2>
+            </div>
+            <div class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+
+              <div class="isa_mobile">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/cenifer_act2_1.jpg" alt="img Activity">
+                </figure>
+              </div>
+              <div class="isa_laptop">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/cenifer_act2_1.jpg" alt="img Activity">
+                </figure>
+              </div>
+
+              <!-- <div class="isa_laptop container is-margen">
+                  <div class="carousel">
+                    <div class="item-1">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
+                      </figure>
+                    </div>
+                    <div class="item-2">    
+                      <figure class="image is-4by3">
+                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </figure>
+                    </div>
+                    <div class="item-3">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+                  <script>
+                  bulmaCarousel.attach('.carousel', {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    autoplay:true,
+                    autoplaySpeed: 2000,
+                    pagination: false,
+                    infinite: true,
+                    pauseOnHover:true
+                  });
+                  </script> -->
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--  -->
+  <div class="container is-fluid section feature-section">
+    <img class="feature-shape" src="./img/curves/section-curve-dark-pink.png" alt>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div
+              class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+
+              <div class="isa_mobile">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/cenifer_act3_1.JPG" alt="img Activity">
+                </figure>
+              </div>
+              <!-- <div class="isa_laptop">
+                                <figure class="image is-square is-shadow">
+                                    <img src="./img/actv/cenifer_actv1.png" alt="img Activity">
+                                </figure>
+                            </div> -->
+
+              <div class="isa_laptop container is-margen">
+                <div class="carousel">
+                  <div class="item-1">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/cenifer_act3_1.JPG" alt="carousel_img1">
+                    </figure>
+                  </div>
+                  <div class="item-2">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/cenifer_act3_2.JPG" alt="carousel_img3">
+                    </figure>
+                  </div>
+                  <div class="item-3">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/cenifer_act3_3.JPG" alt="carousel_img3">
+                    </figure>
+                  </div>
+                  <div class="item-2">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/cenifer_act3_4.JPG" alt="carousel_img4">
+                    </figure>
+                  </div>
+                  <div class="item-2">
+                    <figure class="image is-4by3">
+                      <img src="./img/actv/cenifer_act3_5.JPG" alt="carousel_img5">
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+              <script>
+                bulmaCarousel.attach('.carousel', {
+                  slidesToScroll: 1,
+                  slidesToShow: 1,
+                  autoplay: true,
+                  autoplaySpeed: 2000,
+                  pagination: false,
+                  infinite: true,
+                  pauseOnHover: true
+                });
+              </script>
+
+            </div>
+            <div
+              class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title is-1 mb-6">
+                Our CF calculation
+              </h1>
+              <h3 class="title is-3">
+                CENIFER
+              </h3>
+              <div class="divider is-pink"></div>
+
+              <h2 class="subtitled subtitle">
+                We had a meeting with consultant Natalia Conejo about the way to identify the measurable factors of scope 3, and data taken to be included in the calculator of the Ecological Transition Ministry where scopes 1 and 2 are considered.
+After that we gathered some data about main issues on SCOPE 3, we designed our Instagram profile image and finally we presented the research in Bozen.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+  <!--  -->
+<div class="actv_act" id="goranssonska">
+  <div class="container is-fluid section feature-section">
+    <img class="feature-shape" src="./img/curves/section-curve-purple.png" alt>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div
+              class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title titled is-1 mb-6">
+                Workshop Metal
+              </h1>
+              <h3 class="title is-3">
+                GÖRANSSONSKA SKOLAN
+              </h3>
+              <div class="divider is-purple"></div>
+              <h2 class="subtitle subtitled">
+                Our founders and the company behind the school (Sandvik), has a thought behind all
+                materials produced. Both functionally and environmentally. All excess materials and
+                waste get recycled at the factory. That enables the company to create new products
+                without using new materials. That in the turn enable Sandvik to save money whilst still
+                thinking about the environment. Through our collaboration with Sandvik we are
+                responsible to recycle all materials left over as well. Through the recycling of all
+                materials we can reduce our carbon emissions and use of materials.
+              </h2>
+            </div>
+            <div
+              class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+              <!-- <figure class="image is-square is-shadow">
+                  <img src="https://bulma.io/images/placeholders/128x128.png" alt>
+                </figure> -->
+              <div class="isa_mobile">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/goran_2.png" alt="img Activity">
+                </figure>
+              </div>
+              <div class="isa_laptop">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/goran_2.png" alt="img Activity">
+                </figure>
+              </div>
+
+              <!-- <div class="isa_laptop container is-margen">
+                  <div class="carousel">
+                    <div class="item-1">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
+                      </figure>
+                    </div>
+                    <div class="item-2">    
+                      <figure class="image is-4by3">
+                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </figure>
+                    </div>
+                    <div class="item-3">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+                  <script>
+                  bulmaCarousel.attach('.carousel', {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    autoplay:true,
+                    autoplaySpeed: 2000,
+                    pagination: false,
+                    infinite: true,
+                    pauseOnHover:true
+                  });
+                  </script> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--  -->
+  <div class="container is-fluid section feature-section">
+    <img class="feature-shape" src="./img/curves/section-curve-primary.png" alt>
+    <section class="hero is-white is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns  is-vcentered">
+            <div
+              class="column is-10-mobile is-4-desktop is-offset-1-desktop is-4-widescreen is-offset-1-widescreen is-4-fullhd is-offset-1-fullhd">
+              <!-- <figure class="image is-square is-shadow">
+                  <img src="https://bulma.io/images/placeholders/128x128.png" alt>
+                </figure> -->
+              <div class="isa_mobile">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/gorna_ac1.png" alt="img Activity">
+                </figure>
+              </div>
+              <div class="isa_laptop">
+                <figure class="image is-square is-shadow">
+                  <img src="./img/actv/gorna_ac1.png" alt="img Activity">
+                </figure>
+              </div>
+
+              <!-- <div class="isa_laptop container is-margen">
+                  <div class="carousel">
+                    <div class="item-1">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img1">
+                      </figure>
+                    </div>
+                    <div class="item-2">    
+                      <figure class="image is-4by3">
+                        <iframe class="has-ratio" src="https://www.youtube.com/embed/21EXv1P2AV8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </figure>
+                    </div>
+                    <div class="item-3">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img3">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img4">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img5">
+                      </figure>
+                    </div>
+                    <div class="item-2">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="carousel_img6">
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+                  <script>
+                  bulmaCarousel.attach('.carousel', {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    autoplay:true,
+                    autoplaySpeed: 2000,
+                    pagination: false,
+                    infinite: true,
+                    pauseOnHover:true
+                  });
+                  </script> -->
+            </div>
+            <div
+              class="column is-10-mobile is-5-desktop is-offset-1-desktop is-5-widescreen is-offset-1-widescreen is-5-fullhd is-offset-1-fullhd">
+              <h1 class="title is-1 mb-6">
+                Solar panel installation
+              </h1>
+              <h3 class="title is-3">
+                GÖRANSSONSKA SKOLAN
+              </h3>
+              <div class="divider is-primary"></div>
+
+              <h2 class="subtitled subtitle">
+                As an action toward a greener planet. Göranssonska skolan decided to install
+                approximately 300 solar panels on their roof. Through this new source of energy, they
+                have generated around 90 000 kWh a year (which covers approximately 30% of the school’s
+                yearly use of electricity). The solar cells were installed though a project that all
+                first graders have. Through this special subject called “project” students can change
+                the school towards a more sustainable place.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+  <br><br><br>
+  <br><br><br><br><br><br><br>
+
+  <!-- upbutton -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+
+  <script>
+    (function ($) {
+      "use strict";
+
+      //Switch dark/light
+
+      $(document).ready(function () {
+        "use strict";
+
+        //Scroll back to top
+
+        var progressPath = document.querySelector(".progress-wrap path");
+        var pathLength = progressPath.getTotalLength();
+        progressPath.style.transition = progressPath.style.WebkitTransition =
+          "none";
+        progressPath.style.strokeDasharray = pathLength + " " + pathLength;
+        progressPath.style.strokeDashoffset = pathLength;
+        progressPath.getBoundingClientRect();
+        progressPath.style.transition = progressPath.style.WebkitTransition =
+          "stroke-dashoffset 10ms linear";
+        var updateProgress = function () {
+          var scroll = $(window).scrollTop();
+          var height = $(document).height() - $(window).height();
+          var progress = pathLength - (scroll * pathLength) / height;
+          progressPath.style.strokeDashoffset = progress;
+        };
+        updateProgress();
+        $(window).scroll(updateProgress);
+        var offset = 50;
+        var duration = 550;
+        jQuery(window).on("scroll", function () {
+          if (jQuery(this).scrollTop() > offset) {
+            jQuery(".progress-wrap").addClass("active-progress");
+          } else {
+            jQuery(".progress-wrap").removeClass("active-progress");
+          }
+        });
+        jQuery(".progress-wrap").on("click", function (event) {
+          event.preventDefault();
+          jQuery("html, body").animate({
+            scrollTop: 0
+          }, duration);
+          return false;
+        });
+      });
+    })(jQuery);
+  </script>
+  <!-- upbutton end -->
+
+
+  <!-- footer -->
+  <img class="footer-waves" src="./img/bg/wavy-dark.png" alt="footer waves">
+  <footer class="footer footer-dark">
+    <div class="container is-max-desktop">
+      <div class="columns">
+        <div class="column is-6">
+          <h3 class="title is-5">ABOUT THE PROJECT</h3>
+          <p>CF Train in VET is a project whose main objective is to train future professionals in sustainable skills
+            based on the concept of Carbon Footprint calculation and reduction.</p>
+        </div>
+        <div class="column is-3">
+          <h3 class="title is-5">JUST AT ONE CLICK</h3>
+          <div class="footer-link-column">
+            <a href="./index.html">Home</a><br>
+            <a href="./about.html">About the project</a><br>
+            <a href="./partners.html">Partners</a><br>
+            <a href="./activities.html">Activities</a><br>
+          </div>
+        </div>
+        <div class="column is-3">
+          <h3 class="title is-5">USEFUL LINKS</h3>
+          <div class="footer-link-column">
+            <a href="">Carbon footprint calculator</a><br>
+            <a href="https://erasmus-plus.ec.europa.eu" target="blank">Erasmus+ Website</a><br>
+          </div>
+          <!-- <div class="columns">
+							<div class="column">
+								<figure class="image is-64x64">
+									<img class="footer-icon" src="./img/logo-black.png" alt="CF Train in VET logo black">
+								</figure>
+							</div> -->
+          <!-- <div class="column"> -->
+          <figure class="image is-6by1">
+            <img class="footer-icon" src="./img/Erasmus+_white.png" alt="Erasmus logo black">
+          </figure>
+          <!-- </div> -->
+          <!-- </div> -->
+
+        </div>
+      </div>
+      <br>
+      <p>By <a target="blank" href="https://github.com/diegue-exe">Diego B.</a>, Loreanny S., Lucía B. and <a target="blank" href="https://github.com/UnaiLongas">Unai L.</a></p>
+      
+    </div>
+  </footer>
+  <!-- footer end -->
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
-
